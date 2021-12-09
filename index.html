@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="medicine.jpg">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/000007452e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="main.css">
+	<script defer src="main.js"></script>
+	<title>Inicio | Herbal Oil</title>
+</head>
+<body>
+	<header>
+  <nav class="nav">
+	<a href="index.html"><img class="logo nav-link" src="logo.png"></a>
+	<button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+  	<ul class="nav-menu" id="target">
+	<li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">Inicio</a></li>
+	<li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#hola">Productos</a></li>
+	<li class="nav-menu-item"><a class="nav-menu-link nav-link " href="#quienes-somos">Quienes Somos</a></li>
+	<li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active" href="#contacto">Contacto</a></li>		
+	</ul>
+  </nav>
+  <div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+	  <img src="primer-slide.jpg" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+	  <img src="segundo-slide.jpg" style="width:100%">
+	  <div class="text-2"></div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+	  <img src="tercer-slide.jpg" style="width:100%">
+	  <div class="text-3"></div>
+	</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+	</div>
+	<br>
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+</header>
+<main id="hola">
+	<section class="tittle-menu">
+	<h1 class="productos">PRODUCTOS</h1>
+	<div class="bp"></div>
+    </section>
+	<section>
+		<div class="producto">
+			<div class="producto-img"><a href="###"><img src="producto.jpeg"/></div>
+			<div class="producto-fotter">
+				<h3>Bruma Facial</h3>
+				<p>CBD 8% - Aceite de romero / 60ml <br>
+					Tónico facial para tratamiento de bruxismo - insomnio - descanso - descongestivo respiratorio	<br>				
+					Se usa sobre rostro y almohada antes de dormir.</p></a>
+			</div>
+		</div>
+	</section>
+</main>
+<div class="quienes-somos" id="quienes-somos">
+<div class="quienes-somos-first">
+	<h1 class="quienes-somos-tittle">¿Quiénes Somos?</h1>
+	<div class="bqs"></div>
+	<br><br>
+		<span>Somos un grupo de emprendedores amantes de la cosmetica y la botanica, que tiene como objetivo mejorar tu calidad de vida.
+			Creemos en el cannabis como la solución a muchos problemas de salud y optamos por elegir productos 100% organicos, amigables con el medio ambiente y sustentables.
+			Luego de varios años de desarrollo con profesionales tanto del area de la salud y comerciales logramos crear una propuesta que se adecue a tus necesidades y siempre pensando en tu bienestar.
+	</div>
+	<div class="quienes-somos-second">
+		<img class="quienes-somos-img" src="quienes-somos.png">
+	</div>
+</div>
+<div class="contacto" id="contacto">
+	<div class="info">
+		<form>
+			<h4>Contacto</h4>
+			<input
+			  class="controls input-text"
+			  type="text"
+			  name="nombre"
+			  placeholder="Escriba su nombre"
+			/>
+			<input
+			  class="controls input-text"
+			  type="text"
+			  name="apellido"
+			  placeholder="Escriba su apellido"
+			/>
+			<input
+			  class="controls"
+			  type="email"
+			  name="correo"
+			  placeholder="Escriba su correo"
+			/>
+			<input
+			  class="controls"
+			  type="text"
+			  name="text"
+			  placeholder="Escriba su mensaje"
+			/>
+			<input class="botons" type="submit" value="Enviar"/>
+		</form>
+	</div>
+</div>
+<div class="footer" id="footer">
+	<span>Copyright 2021 - Herbal Oil. Todos los derechos reservados.</span>
+</div>
+<div class="social-bar">
+    <a href="https://www.linkedin.com/in/lucasezequielsilva/" class="icon icon-linkedin" target="_blank"></a>
+    <a href="https://www.instagram.com/mrain00/" class="icon icon-instagram" target="_blank"></a>
+  </div>
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
